@@ -1,0 +1,403 @@
+body {
+    background-image:url("img/suelen-inacio-haunting-house.jpeg");
+    background-size: cover;
+    user-select: none; /*prevents user from highlighting texts */
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#monster {
+    height: 75px;
+    width: 100px;
+    background-image:url("img/ghost3.png");
+    background-size: cover;
+    position: absolute;
+    bottom: 40%;
+    margin-left: 80%;
+    opacity: 100%;
+}
+
+.monster {
+    filter: drop-shadow(35px 35px 1px yellowgreen);
+    -webkit-filter: drop-shadow(35px 35px 1px yellowgreen);
+}
+.monster2 {
+    filter: drop-shadow(35px 35px 1px red);
+    -webkit-filter: drop-shadow(35px 35px 1px red);
+}
+
+#person {
+    height: 300px;
+    width: 150px;
+    background-image:url("img/scaredguy.png");
+    background-size: cover;
+    opacity: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* THIS IS ALSO WHERE SOME STUFF IS */
+
+ 
+.btns{
+    padding: 1%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    left: 80%;
+    bottom: 10%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.btns:hover {
+    border: 2px solid red;      ;
+}
+.clickEffect {
+    background-color: black;
+    color: red;
+    font-size: 41px;
+}
+
+
+/* INFORMATION RELATED STYLES ****************************************************************/
+.personstats {
+    font-size: 40px;
+    font-family: sans-serif;
+    line-height: 70%;
+    padding-left: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 60%;
+    text-align: left;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
+
+#clock {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 140px;
+    color: white;
+    text-shadow: 0px 2px 3px black;
+    padding-left: 20px;
+    position: absolute;
+    left: 80%;
+    text-align: center;
+} 
+#infoBox {
+    padding: 1%;
+    font-family: sans-serif;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    bottom: 65%;
+    border-radius: 20px;
+}
+.infoBox {
+    font-size: 60px;
+    position: absolute;
+    left: 30%;
+    bottom: 65%;
+    text-shadow: 2px 2px 2px white;
+}
+.infoBox2 {
+    position: absolute;
+    transition: 3s;
+    opacity: 0;
+}
+.missInfoBox {
+    background-color: white;
+} 
+.scaredInfoBox {
+    background-color: red;
+} 
+.healedInfoBox {
+    background-color: greenyellow;
+}
+/* ***************************************************************************************** */
+
+
+#slide {
+    position: absolute;
+    height: 20px;
+    width: 50%;
+    background-color: red;
+    left: 20%;
+    bottom: 11%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#sliderTarget1 {
+    position: absolute; 
+    left: 20%;
+    bottom: 10%;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-image: url("img/crossbones.jpg");
+    background-size: cover;
+    z-index: +1;
+}
+#sliderTarget2 {
+    position: absolute; 
+    left: 69%;
+    bottom: 10%;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-image: url("img/healthpack.png");
+    background-size: cover;
+    z-index: +1;
+
+}
+.regular {
+    width: 35px;
+    height: 35px;
+    transition: 1s;
+}
+.bigger {
+    width:50px;
+    height:50px;
+}
+.slider {
+    position: absolute; 
+    width: 1%;
+    left: 20%;
+    bottom: 10.4%;
+    height: 25px;
+    border: 5px solid black;
+    border-left: red;
+    border-right: red;
+    background-color: pink;
+    border-radius: 90px;
+    z-index: +1;
+}
+/* *************************************************************************************************** */
+/* FEAR BARS */
+#braveryStat {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    color: white;
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    bottom: 50%;
+    padding: 4px;
+    border: 4px solid red;
+    border-radius: 10px;
+    z-index: -1;
+}
+#braveryBar {
+    position: absolute;
+    bottom: 51%;
+    width: 400px;
+    height: 30px;
+    background-color: red;
+    z-index: -2;
+}
+
+#anticipation {
+    font-size: 30px;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    color: white;
+    position: absolute;
+    height: 30px;
+    width: 400px;
+    bottom: 57%;
+    padding: 4px;
+    border: 4px solid yellowgreen;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+#anticipationBar {
+    position: absolute;
+    bottom: 58%;
+    height: 30px;
+    background-color: greenyellow;
+    z-index: -2;
+}
+
+#multi {
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    color: lightcyan;
+    position: absolute;
+    bottom: 65%
+}
+
+#missmulti {
+    font-family: 'Indie Flower', cursive;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    color: red;
+    position: absolute;
+    bottom: 65%
+}
+
+#level {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 2px 3px black;
+    padding-left: 20px;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    text-align: center;
+}
+#highscore {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 2px 3px black;
+    padding-left: 20px;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    text-align: center;
+}
+#highScorePlayer {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 2px 3px black;
+    padding-left: 20px;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    text-align: center;
+}
+#countdown {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 200px;
+    color: white;
+    text-shadow: 0px 2px 3px black;
+    padding-left: 20px;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    text-align: center;
+}
+
+#scoresList {
+    font-size: 20px;
+    text-align: left;
+    line-height: 50px;
+    overflow-y:auto
+}
+
+.menuVisible{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px;
+    color: white;
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    bottom: 40%;
+    left: 35%;
+    padding: 4px;
+    border: 4px solid white;
+    background-color: black;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 100%;
+    transition: .5s;
+}
+.menuInvisible{
+    bottom: 40%;
+    left: 35%;
+    font-size: 0px;
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
+    color: transparent;
+}
+
+#niceTryText {
+    position: absolute;
+    bottom: 52%;
+    left: 18%;
+}
+#niceTryFailText {
+    line-height: 50px;
+    position: absolute;
+    bottom: 33%;
+    left: 0%;
+}
+#saveScore {
+    position: absolute;
+    bottom: 20%;
+    left: 18%;
+}
+#exitSaveScore {
+    position: absolute;
+    right: 3%; 
+    top: 3%;
+}
+#saveScore:hover {
+    color: red;
+}
+#exitSaveScore:hover {
+    color: red; 
+}
+#exitNiceTryFail {
+    position: absolute;
+    right: 3%; 
+    top: 3%;
+}
+#exitNiceTryFail:hover {
+    color: red;
+}
+#restart {
+    margin-top: 25%;
+}
+#restart:hover {
+    color: red;
+}
+#resume {
+    margin-top: 10%;
+}
+#resume:hover {
+    color: red;
+}
+
+#start {
+    margin-top: 25%;
+}
+#start:hover {
+    color: red;
+}
+
+#viewScores {
+    margin-top: 10%;
+}
+#viewScores:hover {
+    color: red;
+}
+
+.submit {
+    position: absolute;
+    bottom: 30%;
+    width: 50px;
+    background-color: yellowgreen;
+    border-radius: 20px;
+}

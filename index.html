@@ -1,0 +1,82 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="app.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="#">
+    </head>
+    <body>
+
+        <div id="level">lvl: 1</div>
+        <div id=highscorePlayer></div>
+        <div id="highscore"></div>
+        <div id="scoresList" class="menuInvisible"></div>
+        
+        
+        <div id="startMenu" class="menuInvisible">
+            <div id="start" >START GAME</div>
+            <div id="viewScores">View Highscores</div>
+        </div>
+
+
+        <div id="menu" class="menuInvisible">
+            <div id="restart" >START OVER</div>
+            <div id="resume">RESUME</div>
+        </div>
+
+        <div id="niceTry" class="menuInvisible">
+            <div id="niceTryText">Nice try ghost!</div>
+            <div id="saveScore">Save your score</div>
+            <div id="exitSaveScore">X</div>
+        </div>
+
+        <div id="niceTryFail" class="menuInvisible">
+            <div id="niceTryFailText">Better luck next time Ghost</div>
+            <div id="exitNiceTryFail">X</div>
+        </div>
+
+        <div id="scoreForm" class="menuInvisible">
+            <label for="name">Name (4 to 8 characters):</label>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10"></input>
+            <button id="submit" type="button">Submit</button>
+        </div>
+
+
+        <div id="countdown"></div>
+
+        <div id="monster" class="invisible" > </div>
+        <div id="person"></div>
+       
+        <div class="personstats"></div>
+
+        <div id="braveryStat">Bravery: 100</div>
+        <div id="braveryBar"></div>
+
+        <div id="anticipation">anticipation: 0</div>
+        <div id="anticipationBar"></div>
+
+        <div id="multi"></div>
+        <div id="missmulti"></div>
+
+        <div>
+            <p id="announce"></p>
+            <p id="announce2"></p>
+        </div>
+        <div id="infoBox"></div>
+
+        <div id="clock"></div>
+
+        <div>
+            <p id="slide">
+                <p id="slider" class="slider"></p>
+                <p id="sliderTarget1" class="regular"></p>
+                <p id="sliderTarget2" class="regular"></p>
+            </p>
+        </div>
+
+        <!-- <script src="app.js"></script> -->
+        <script src="app2.js"></script>
+    </body>
+</html>
